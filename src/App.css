@@ -1,38 +1,115 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: 	#87CEEB;
+
+}
+.heading{
   text-align: center;
+  padding: 20px;
+  color: white;
+  background-color:#227da2;
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-form{
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 70%;
+  min-height: 80vh;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: 	#87CEEB;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-form form{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+input,textarea{
+  padding: 20px 30px;
+  margin: 10px;
+  background-color: 	#87CEEB;
+  border: 3px solid white;
+  border-radius: 5px;
+  color: black;
+  font-size: 20px;
+  outline: none;
+}
+button{
+  color: black;
+  background-color: #87CEEB;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 10px;
+  transition: all 0.2s;
+}
+.subBtn:hover{
+  background-color: 	#FFF5EE;
+  color: black;
+  border: 1px solid black;
+}
+.task{
+  display: flex;
+  margin: 10px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: 	#FFF5EE;
+}
+.task > div{
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+.task span{
+  color: rgba(0, 0, 0, 0.601);
+}
+.task>button{
+  font-size: 15px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.task>button:hover{
+  background-color: crimson;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width:480px)  {
+    .heading{
+      padding: 15px;
+      font-size: 18px;
+    }
+    .text-form{
+      width: 95%;
+      margin: 80px auto;
+      padding: 10px;
+    }
+    input,textarea{
+      padding: 10px 20px;
+      margin: 6px;
+    }
+    button{
+      padding: 9px 15px;
+      font-size: 15px;
+    }
+    .task>button{
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+    .task > div{
+      padding: 3px;
+      font-size: 15px;
+    }
 }
