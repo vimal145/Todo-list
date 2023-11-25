@@ -14,9 +14,21 @@ body{
   color: white;
   background-color:#227da2;
   font-size: 30px;
-  position: fixed;
-  top: 0;
-  width: 100%;
+}
+.navLinks{
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color:#abc9d5;
+  font-size: 15px;
+}
+.navLinks>a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+.navLinks>a:hover{
+  color: black;
 }
 .text-form{
   border: 3px solid white;
@@ -84,6 +96,30 @@ button{
 .task>button:hover{
   background-color: crimson;
   cursor: pointer;
+}
+.contact{
+  width: 100%;
+  height: 100vh;
+  background-color: #227da2;
+}
+.about{
+  width: 100%;
+  height: 100vh;
+  background-color: burlywood;
+}
+.user{
+  width: 100%;
+  height: 100vh;
+  background-color: burlywood;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width:480px)  {
